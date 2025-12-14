@@ -75,7 +75,9 @@ body {
 }
 
 .nav-button {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   border-radius: 999px;
   background-color: #2541b2;
   color: #fdfff7;
@@ -150,7 +152,7 @@ body {
 .section-about-inner {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 5rem;
 }
 
 .about-image-wrapper {
@@ -161,9 +163,10 @@ body {
 
 .about-image {
   width: 60%; /* nebo 80%, 60%, podle potřeby */
-  max-width: 600px; /* můžeš nastavit limit */
+  max-width: 350px; /* můžeš nastavit limit */
   height: auto;
-  margin: 0 auto; /* vycentrování */
+  margin-left: auto;
+  margin-right: 0;
 }
 .about-content {
   flex: 1;
@@ -175,7 +178,7 @@ body {
   font-weight: 400;
   margin-top: 1.5rem;
   margin-bottom: 0;
-  max-width: 80ch;
+  max-width: 30ch;
 }
 
 .projects-list {
@@ -206,7 +209,7 @@ body {
 }
 
 .project-title + .project-image {
-  margin-top: 4.5rem;
+  margin-top: 2rem;
 }
 .project-image + .project-title {
   margin-top: 9rem;
@@ -253,7 +256,7 @@ body {
   cursor: pointer;
   text-decoration: none; /* přidáno */
   color: #fdfff7; /* aby se choval stejně jako původní nadpis */
-  transition: color 0.25s ease, transform 0.25s ease;
+  /*transition: color 0.25s ease, transform 0.25s ease;*/
 }
 
 .footer-text p {
@@ -291,14 +294,16 @@ body {
   .section-about-inner {
     flex-direction: row;
     align-items: center;
+    gap: 3.5rem;
   }
 
   .about-image-wrapper {
-    justify-content: flex-start;
+    width: 45%;
   }
 
   .about-content {
-    max-width: 60%;
+    max-width: 45%;
+    max-width: none;
   }
 }
 
